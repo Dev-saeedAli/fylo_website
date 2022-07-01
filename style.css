@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Inter&family=Josefin+Sans&family=Londrina+Shadow&family=Montserrat&family=Open+Sans&family=Poppins:ital@0;1&family=Public+Sans:wght@400;500&family=Roboto&family=Tiro+Devanagari+Hindi:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --bg-intro: hsl(217, 28%, 15%);
+  --bg-main: hsl(218, 28%, 13%);
+  --footer-bg: hsl(216, 53%, 9%);
+  --testimonial: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --error: hsl(0, 100%, 63%);
+  --white: rgba(245, 245, 245, 0.886);
+  --font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: var(--bg-intro);
+  font-family: var(--font-family);
+}
+
+.nav-container {
+  color: var(--white);
+}
+
+.nav-container img {
+  width: 120px;
+}
+
+.navbar-nav li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 0px 10px;
+}
+
+@media screen and (max-width: 520px) {
+  .navbar-nav li a {
+    font-size: 1rem;
+  }
+}
+
+.navbar-nav li a:hover {
+  text-decoration: underline;
+  color: white !important;
+}
+
+.bg-container {
+  background: url(images/bg-curvy-desktop.svg) bottom/contain no-repeat;
+}
+
+.bg-container img {
+  width: 35rem;
+}
+
+.bg-container .h3 {
+  line-height: 1.6;
+}
+
+.bg-container .desc {
+  font-size: 1rem;
+}
+
+.bg-container .btn-primary {
+  background: -webkit-gradient(linear, left top, right top, from(var(--cyan)), to(var(--blue)));
+  background: linear-gradient(to right, var(--cyan), var(--blue));
+  padding: 5px 50px;
+  border-radius: 20px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.bg-container .btn-primary:hover {
+  background: -webkit-gradient(linear, left top, right top, from(var(--white)), to(var(--blue)));
+  background: linear-gradient(to right, var(--white), var(--blue));
+}
+
+.service {
+  background: var(--bg-main);
+}
+
+.service .card img {
+  width: 100px;
+}
+
+.service .card h4 {
+  font-size: 1rem;
+  margin: 5px auto;
+}
+
+.service .card p {
+  font-size: .9rem;
+  line-height: 1.7;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.productive {
+  background: var(--bg-main);
+}
+
+.productive h4 {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 10px 0px;
+}
+
+.productive p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.testimonials {
+  background: var(--bg-main);
+  padding-bottom: 70px;
+}
+
+.testimonials .images {
+  left: 70px;
+  top: 10px;
+}
+
+.testimonials .card {
+  background: var(--testimonial);
+}
+
+.testimonials .profile img {
+  width: 60px;
+}
+
+.testimonials .profile span {
+  font-size: 1rem;
+}
+
+.testimonials .profile span:last-child {
+  font-size: .7rem;
+}
+
+.newsletter {
+  background: var(--bg-main);
+  margin-bottom: -90px;
+}
+
+.newsletter p {
+  font-size: .8rem;
+  margin: 20px auto;
+}
+
+.newsletter .card {
+  background: var(--bg-intro);
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.newsletter input[type="text"] {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: .9rem;
+  width: 300px;
+  max-width: 100%;
+}
+
+.newsletter .btn-primary {
+  background: -webkit-gradient(linear, left top, right top, from(var(--cyan)), to(var(--blue)));
+  background: linear-gradient(to right, var(--cyan), var(--blue));
+  padding: 10px 10px;
+  border-radius: 20px;
+  margin-top: 0px;
+  font-size: .7rem;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.newsletter .btn-primary:hover {
+  background: -webkit-gradient(linear, left top, right top, from(var(--white)), to(var(--blue)));
+  background: linear-gradient(to right, var(--white), var(--blue));
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter .btn-primary {
+    margin-top: 20px;
+  }
+}
+
+.footer {
+  background: var(--footer-bg);
+}
+
+.footer i {
+  border: 1px solid var(--white);
+  border-radius: 70%;
+  padding: 13px;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.footer i:hover {
+  background: white;
+  color: var(--bg-main);
+}
+
+.footer .nav-item .nav-link {
+  cursor: pointer;
+}
+
+.footer .nav-item .nav-link:hover {
+  color: var(#702d2d);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter&family=Josefin+Sans&family=Londrina+Shadow&family=Montserrat&family=Open+Sans&family=Poppins:ital@0;1&family=Public+Sans:wght@400;500&family=Roboto&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
+//Basic styling
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-intro: hsl(217, 28%, 15%); // (intro and email sign up background)
+    --bg-main: hsl(218, 28%, 13%); // (main background)
+    --footer-bg : hsl(216, 53%, 9%);//(footer background)
+    --testimonial : hsl(219, 30%, 18%);//(testimonials background)
+    --cyan: hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --error: hsl(0, 100%, 63%);
+    --white : rgba(245, 245, 245, 0.886);
+    --font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: var(--bg-intro);
+    font-family: var(--font-family);
+}
+.nav-container{
+    color: var(--white);
+}
+.nav-container img{
+    width: 120px;
+}
+.navbar-nav li a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0px 10px;
+
+    @media screen and (max-width: 520px) {
+        font-size: 1rem;
+    }
+
+    &:hover{
+        text-decoration: underline;
+        color: rgb(255, 255, 255) !important;
+    }
+}
+.bg-container{
+    background: url(images/bg-curvy-desktop.svg) bottom /contain no-repeat;
+    img{
+        width: 35rem;
+
+    }
+    .h3{
+        line-height: 1.6;
+    }
+    .desc{
+        font-size: 1rem;
+    }
+    .btn-primary{
+        background: linear-gradient(to right,var(--cyan), var(--blue));
+        padding: 5px 50px;
+        border-radius: 20px;
+        margin-top: 10px;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        transition: all .3s ease;
+
+        &:hover{
+            background: linear-gradient(to right,var(--white), var(--blue));
+        }
+    }
+}
+.service{
+    background: var(--bg-main);
+    
+    .card{
+        
+        img{
+            width: 100px;
+        }
+        
+        h4{
+            font-size: 1rem;
+            margin: 5px auto;
+        }
+        p{
+            font-size: .9rem;
+            line-height: 1.7;
+            text-align: center;
+            padding: 5px 10px;
+        }
+    }
+}
+.productive{
+    background: var(--bg-main);
+    
+    h4{
+        font-size: 2rem;
+        font-weight: bolder;
+        margin: 10px 0px;
+    }
+    p{
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+}
+.testimonials{
+    background: var(--bg-main);
+    padding-bottom: 70px;
+    
+    .images{
+        left: 70px;
+        top: 10px;
+    }
+    
+    .card{
+        background: var(--testimonial);
+    }
+    .profile{
+        
+        img{
+            width: 60px;
+        }
+        span{
+            font-size: 1rem;
+            &:last-child{
+                font-size: .7rem;
+            }
+        }
+    }
+}
+.newsletter{
+    background: var(--bg-main);
+    margin-bottom: -90px;
+
+    p{
+        font-size: .8rem;
+        margin: 20px auto;
+    }
+
+    .card{
+        background: var(--bg-intro);
+        text-align: center;
+        padding: 20px 0px;
+    }
+    input[type="text"]{
+        outline: none;
+        box-shadow: none;
+        font-size: .9rem;
+        width: 300px;
+        max-width: 100%;
+    }
+    .btn-primary{
+        background: linear-gradient(to right,var(--cyan), var(--blue));
+        padding: 10px 10px;
+        border-radius: 20px;
+        margin-top: 0px;
+        font-size: .7rem;
+        font-weight: bolder;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        transition: all .3s ease;
+
+        &:hover{
+            background: linear-gradient(to right,var(--white), var(--blue));
+        }
+
+        @media screen and (max-width:768px) {
+                margin-top: 20px;;
+        }
+    }
+}
+
+.footer{
+    background: var(--footer-bg);
+
+    i{
+        border: 1px solid var(--white);
+        border-radius: 70%;
+        padding: 13px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover{
+            background: white;
+            color: var(--bg-main);
+        }
+    }
+    .nav-item{
+        
+        .nav-link{
+            cursor: pointer;
+
+            &:hover{
+                color: var(rgb(112, 45, 45));
+            }
+        }
+    }
+}
